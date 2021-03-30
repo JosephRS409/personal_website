@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>The Proto-Joe Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <div id="content">
+      <header>
+        <div class="logo-box">
+          <img
+            src="https://cdn.glitch.com/827943e9-7be2-41a1-b0d6-f0b8afae83b7%2F200x200-rsz_high-qual-logo-pete-pedroza-xitnxxlzgae-unsplash.jpg?v=1615608126565"
+            alt="The Proto-Joe Website logo"
+          />
+        </div>
+        <nav>
+          <!-- navigation here -->
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="2-projects.html">Projects</a></li>
+            <!--             <li><a href = "#">Contact</a></li> # makes it go to current page -->
+            <li><a href="3-contact-me.html">Contact Joe</a></li>
+            <!--             <li><a href="aboutme.html">About Me</a></li>  -->
+            <!-- About Me goes at the bottom and Home at the top -->
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="banner">
+          <!-- banner image will go here -->
+          <img
+            src="https://cdn.glitch.com/827943e9-7be2-41a1-b0d6-f0b8afae83b7%2Frsz_1rsz_rsz_1alexander-sinn-yyum2snvnvu-unsplash.jpg?v=1616184072857"
+            alt="binary banner"
+          />
+        </div>
+        <div class="home-grid">
+          <!-- the rest of the main content will go here -->
+          <section class = "home-section1">
+          <h2 class="home-headline-1">
+            Prototype Home page
+          </h2>
+
+          <p class="home-paragraph-1">
+            Welcome to the Home Page! Let's talk about what we can do and have
+            here. The best way to do that is to talk about me! Remember that
+            pitch I gave you earlier? This is the prototype of the
+            aforementioned prototype. Think of this as a model for a building.
+            For these three pages I will be highlighting my works, passion for
+            machine-dance games, and an exhibition of awesome website features.
+            Those pages can be navigated via the the top navigation bar. See
+            what happens when you hover over the navigation titles. Please take
+            a look around and explore. You can find the links to my social media
+            profiles on the next page or at the bottom of each page.
+          </p>
+          </section>
+        
+          <h3 class = "learn-more">Click <a href="2-projects.html">here</a> to learn more about the Digi-Groove Controller.</h3>
+ <!-- 
+          
+
+
+This is the Slideshow HTML and JavaScript.  
+
+<h2 style="text-align:center">Slideshow Gallery</h2> -->
+
+          <div class="container">
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+              <img src="https://cdn.glitch.com/827943e9-7be2-41a1-b0d6-f0b8afae83b7%2FIMG_2033.jpg?v=1614979011968" style="width: 400px; display:block; margin: 0 auto;
+"/>
+<!--               display:block; margin-left:auto; margin-right:auto; -->
+
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+              <img src="https://cdn.glitch.com/827943e9-7be2-41a1-b0d6-f0b8afae83b7%2Frsz_img_1323.jpg?v=1615617845885" style="width:100%; display:block; margin: 0 auto;" />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+              <img src="https://cdn.glitch.com/827943e9-7be2-41a1-b0d6-f0b8afae83b7%2Frsz_digi-groove_1.jpg?v=1615609815397" style="width:100%; display:block; margin: 0 auto;" />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+              <img src="https://cdn.glitch.com/827943e9-7be2-41a1-b0d6-f0b8afae83b7%2Frsz_digi-groove_3.jpg?v=1615609819956" style="width:100%; display:block; margin: 0 auto;" />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+              <img src="https://cdn.glitch.com/827943e9-7be2-41a1-b0d6-f0b8afae83b7%2FIMG_1354.PNG?v=1614979072582" style="width:100%; display:block; margin: 0 auto;" />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">6 / 6</div>
+              <img src="https://cdn.glitch.com/827943e9-7be2-41a1-b0d6-f0b8afae83b7%2Frsz_1img_1247.jpg?v=1615617854745" style="width:100%; display:block; margin: 0 auto;" />
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+            <div class="row">
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="https://cdn.glitch.com/827943e9-7be2-41a1-b0d6-f0b8afae83b7%2FIMG_2033.jpg?v=1614979011968"
+                  style="width:100%"
+                  onclick="currentSlide(1)"
+                  alt="Joseph's profile picture"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="https://cdn.glitch.com/827943e9-7be2-41a1-b0d6-f0b8afae83b7%2Frsz_img_1323.jpg?v=1615617845885"
+                  style="width:100%"
+                  onclick="currentSlide(2)"
+                  alt="Joseph as Link profile picture"
+                     />
+              </div>
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="https://cdn.glitch.com/827943e9-7be2-41a1-b0d6-f0b8afae83b7%2Frsz_digi-groove_1.jpg?v=1615609815397"
+                  style="width:100%"
+                  onclick="currentSlide(3)"
+                  alt="Digi-Groove front"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="https://cdn.glitch.com/827943e9-7be2-41a1-b0d6-f0b8afae83b7%2Frsz_digi-groove_3.jpg?v=1615609819956"
+                  style="width:100%"
+                  onclick="currentSlide(4)"
+                  alt="Digi-Groove guts"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="https://cdn.glitch.com/827943e9-7be2-41a1-b0d6-f0b8afae83b7%2FIMG_1354.PNG?v=1614979072582"
+                  style="width:100%"
+                  onclick="currentSlide(5)"
+                  alt="Link and Zelda 2018 Com-Con (FanX)"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="https://cdn.glitch.com/827943e9-7be2-41a1-b0d6-f0b8afae83b7%2Frsz_1img_1247.jpg?v=1615617854745"
+                  style="width:100%"
+                  onclick="currentSlide(6)"
+                  alt="Joseph's wife profile picture"
+                />
+              </div>
+            </div>
+          </div>
+
+          <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              showSlides((slideIndex += n));
+            }
+
+            function currentSlide(n) {
+              showSlides((slideIndex = n));
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              var captionText = document.getElementById("caption");
+              if (n > slides.length) {
+                slideIndex = 1;
+              }
+              if (n < 1) {
+                slideIndex = slides.length;
+              }
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].className += " active";
+              captionText.innerHTML = dots[slideIndex - 1].alt;
+            }
+          </script>
+          <!--           End of slideshow HTML and JavaScript. -->
+        </div>
+      </main>
+      <footer>
+        <!-- footer info here -->
+
+        <p>&copy; 2021 The Proto-Joe Website | <a class = "site-plan" href="site-plan.html">Site Plan</a></p>
+        <div class="social">
+          <a href="https://www.instagram.com/joseph.r.stewart/" target="_blank">
+            <img
+              src="https://cdn.glitch.com/827943e9-7be2-41a1-b0d6-f0b8afae83b7%2Frsz_instagram-logo-white-on-black.jpg?v=1615611959378"
+              alt="The Instagram icon"
+          /></a>
+
+          <a
+            href="https://app.joinhandshake.com/users/12777860"
+            target="_blank"
+          >
+            <img
+              src="https://cdn.glitch.com/827943e9-7be2-41a1-b0d6-f0b8afae83b7%2Frsz_2new-handshake-logo.jpg?v=1615611939184"
+              alt="The Handshake icon"
+          /></a>
+
+          <a href="https://www.linkedin.com/in/joseph-stewart/" target="_blank">
+            <img
+              src="https://cdn.glitch.com/827943e9-7be2-41a1-b0d6-f0b8afae83b7%2Frsz_linkedin-high-qual.jpg?v=1616302695181"
+              alt="The LinkedIn icon"
+          /></a>
+
+          <a
+            href="https://www.facebook.com/joseph.r.stewart.50"
+            target="_blank"
+          >
+            <img
+              src="https://cdn.glitch.com/9259f1dc-be5d-4cb2-a818-75d00481ef6a%2Ffacebook.png?1611606738694"
+              alt="The Facebook icon"
+          /></a>
+
+          <a
+            href="https://www.youtube.com/user/Joestructo/videos"
+            target="_blank"
+          >
+            <img
+              src="https://cdn.glitch.com/9259f1dc-be5d-4cb2-a818-75d00481ef6a%2Fyoutube.png?1611606735494"
+              alt="The YouTube icon"
+          /></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

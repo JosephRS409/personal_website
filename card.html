@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Proto-Joe</title>
+    <style>
+      img {
+        max-width: 100%;
+      }
+
+      .card {
+        width: 320px;
+        box-shadow: 1px 1px 4px 1px #888;
+        border-radius: 3px;
+        background-color: white;
+        overflow: hidden;
+        /* overflow deals with the image that goes outside the element boundary */
+      }
+      span,
+      p {
+        font-family: Helvetica, sans-serif;
+      }
+
+      span {
+        /* display: inline-block; */
+        color: #888;
+        margin-left: 8em;
+        font-size: 14.4px;
+      }
+      p {
+        margin-right: 1em;
+      }
+      p,
+      .editButton,
+      .viewButton {
+        margin-left: 18px;
+      }
+      .editButton,
+      .viewButton,
+      span {
+        margin-bottom: 1.45em;
+      }
+      .editButton {
+        margin-left: -2.5px;
+        border-radius: 0 3px 3px 0;
+        border: 1px solid #888;
+        color: #888;
+        padding: 6px;
+      }
+      .viewButton {
+        margin-right: -2.5px;
+        border-radius: 3px 0 0 3px;
+        border: 1px solid #888;
+        color: #888;
+        padding: 6px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <article class="card">
+      <img
+        src="https://picsum.photos/320/240"
+        alt="Totally radly random image, brah."
+      />
+      <p>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </p>
+      <footer>
+        <button class="viewButton">View</button>
+        <button class="editButton">Edit</button>
+        <span>Cloud 9 mins</span>
+      </footer>
+    </article>
+  </body>
+</html>
