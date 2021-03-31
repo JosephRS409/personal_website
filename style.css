@@ -300,7 +300,13 @@ End of Slideshow CSS
 
 /* 3-contact-me.html CSS */
 
-
+.contact-grid {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin: 1em;
+}
 
 /*
 Form Style CSS
