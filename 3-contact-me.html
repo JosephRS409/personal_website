@@ -1,67 +1,57 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <title>The Proto-Joe Website</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <div id="content">
-      <header>
-        <div class="logo-box">
-          <img
-            src="https://cdn.glitch.com/827943e9-7be2-41a1-b0d6-f0b8afae83b7%2F200x200-rsz_high-qual-logo-pete-pedroza-xitnxxlzgae-unsplash.jpg?v=1615608126565"
-            alt="The Proto-Joe Website logo"
-          />
-        </div>
-        <nav>
-           
-          <!-- navigation here -->
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="2-projects.html">Projects</a></li>
-            <!--             <li><a href = "#">Contact</a></li> # makes it go to current page -->
-            <li><a href="3-contact-me.html">Contact Joe</a></li>
-            <!--             <li><a href="aboutme.html">About Me</a></li>  -->
-            <!-- About Me goes at the bottom and Home at the top -->
-          </ul>
-        </nav>
-      </header>
-      <main>
-        
-        <div class="contact-grid">
-          <!--         Anything that wants to change need a selector i.e. class or id -->
-          <h1 class="contactHeadline1">
-            Contact Me
-          </h1>
+<head>
+  <title>The Proto-Joe Website</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-          <img
-            class="digi-front"
-            src="https://cdn.glitch.com/827943e9-7be2-41a1-b0d6-f0b8afae83b7%2Frsz_digi-groove_1.jpg?v=1615609815397"
-            alt="Digi-Groove front"
-          />
+<body>
+  <div id="content">
+    <header>
+      <div class="logo-box">
+        <img
+          src="https://cdn.glitch.com/827943e9-7be2-41a1-b0d6-f0b8afae83b7%2F200x200-rsz_high-qual-logo-pete-pedroza-xitnxxlzgae-unsplash.jpg?v=1615608126565"
+          alt="The Proto-Joe Website logo" />
+      </div>
+      <nav>
 
-          <h3>
-            Do you want something cool like this?
-          </h3>
+        <!-- navigation here -->
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="2-projects.html">Projects</a></li>
+          <!--             <li><a href = "#">Contact</a></li> # makes it go to current page -->
+          <li><a href="3-contact-me.html">Contact Joe</a></li>
+          <!--             <li><a href="aboutme.html">About Me</a></li>  -->
+          <!-- About Me goes at the bottom and Home at the top -->
+        </ul>
+      </nav>
+    </header>
+    <main>
 
-          <img
-            class="digi-guts"
-            src="https://cdn.glitch.com/827943e9-7be2-41a1-b0d6-f0b8afae83b7%2Frsz_digi-groove_3.jpg?v=1615609819956"
-            alt="Digi-Groove inside"
-          />
-
-        <h3 class = "storyHeadline">The Story</h3>
-        <p class = "introParagraph">
+      <div class="contact-grid">
+        <!--         Anything that wants to change need a selector i.e. class or id -->
+        <h2 class="storyHeadline">The Story</h2>
+        <p class="introParagraph">
           Named after a rhythm game's artwork theme, the Digi-Groove Controller
           allows the user to play machine-dancing with their hands instead of
           just their feet.
           <!--<li></li>-->
         </p>
 
-        <p class = "backgroundParagraph1">
+        <img class="digi-front"
+          src="https://cdn.glitch.com/827943e9-7be2-41a1-b0d6-f0b8afae83b7%2Frsz_digi-groove_1.jpg?v=1615609815397"
+          alt="Digi-Groove front" />
+
+
+        <img class="digi-guts"
+          src="https://cdn.glitch.com/827943e9-7be2-41a1-b0d6-f0b8afae83b7%2Frsz_digi-groove_3.jpg?v=1615609819956"
+          alt="Digi-Groove inside" />
+
+
+        <p class="backgroundParagraph1">
           Back in 2015, I saw the coolest arcade cabinet. It was a rhythm dance
           game called "Digi-Groove." What made it so awesome was that you could
           play with hands instead of feet! I fell for it, and spent a lot of
@@ -69,104 +59,95 @@
           one too. So I built one.
         </p>
 
-        <p class = "backgroundParagraph2">
+        <p class="backgroundParagraph2">
           It was quite the process. Not knowing much about what to do, I
           recruited friends and professionals who knew something about hardware
           and software. With the help of two dear friends, we created two
           "Digi-Groove Controllers". These were far more portable than a cabinet
           and really helped cut down the building costs.
         </p>
-          <h3 class = "contactHeadline2">
-            Get in touch with me today!
-          </h3>
+        <!-- <h1 class="contactHeadline1">
+          Contact Me
+        </h1> -->
+        <h3 class="coolQuestion">
+          Do you want something cool like this?
+        </h3>
+        <h3 class="contactHeadline2">
+          Get in touch with me today!
+        </h3>
 
-          <div id="feedback"></div>
-          <form action="/my-handling-form-page" method="post">
-            <ul>
-              <li>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name" />
-              </li>
-              <li>
-                <label for="mail">E-mail:</label>
-                <input type="email" id="mail" name="user_mail" />
-              </li>
-              <li>
-                <label for="msg">Message:</label>
-                <textarea id="msg" name="user_message"></textarea>
-              </li>
-              <li class="button">
-                <button type="submit">Send your message</button>
-              </li>
-            </ul>
-          </form>
-          <script>
-            // get the feedback div element so we can do something with it.
-            const feedbackElement = document.getElementById("feedback");
-            // get the form so we can read what was entered in it.
-            const formElement = document.forms[0];
-            // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-            formElement.addEventListener("submit", function(e) {
-              // stop the form from doing the default action
-              e.preventDefault();
-              // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-              feedbackElement.innerHTML =
-                "Hello " +
-                formElement.user_name.value +
-                "! Thank you for your message. We will get back with you as soon as possible!";
-              // make the feedback element visible.
-              feedbackElement.style.display = "block";
-              // add a class to move everything down so our message doesn't cover it.
-              document.body.classList.toggle("moveDown");
-            });
-          </script>
-        </div>
-      </main>
-      <footer>
-        <!-- footer info here -->
+        <div id="feedback"></div>
+        <form action="/my-handling-form-page" method="post">
+          <ul>
+            <li>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="user_name" />
+            </li>
+            <li>
+              <label for="mail">E-mail:</label>
+              <input type="email" id="mail" name="user_mail" />
+            </li>
+            <li>
+              <label for="msg">Message:</label>
+              <textarea id="msg" name="user_message"></textarea>
+            </li>
+            <li class="button">
+              <button type="submit">Send your message</button>
+            </li>
+          </ul>
+        </form>
+        <script>
+          // get the feedback div element so we can do something with it.
+          const feedbackElement = document.getElementById("feedback");
+          // get the form so we can read what was entered in it.
+          const formElement = document.forms[0];
+          // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+          formElement.addEventListener("submit", function (e) {
+            // stop the form from doing the default action
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML =
+              "Hello " +
+              formElement.user_name.value +
+              "! Thank you for your message. We will get back with you as soon as possible!";
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle("moveDown");
+          });
+        </script>
+      </div>
+    </main>
+    <footer>
+      <!-- footer info here -->
 
-        <p>&copy; 2021 The Proto-Joe Website | <a class = "site-plan" href="site-plan.html">Site Plan</a></p>
-        <div class="social">
-          <a href="https://www.instagram.com/joseph.r.stewart/" target="_blank">
-            <img
-              src="https://cdn.glitch.com/827943e9-7be2-41a1-b0d6-f0b8afae83b7%2Frsz_instagram-logo-white-on-black.jpg?v=1615611959378"
-              alt="The Instagram icon"
-          /></a>
+      <p>&copy; 2021 The Proto-Joe Website | <a class="site-plan" href="site-plan.html">Site Plan</a></p>
+      <div class="social">
+        <a href="https://www.instagram.com/joseph.r.stewart/" target="_blank">
+          <img
+            src="https://cdn.glitch.com/827943e9-7be2-41a1-b0d6-f0b8afae83b7%2Frsz_instagram-logo-white-on-black.jpg?v=1615611959378"
+            alt="The Instagram icon" /></a>
 
-          <a
-            href="https://app.joinhandshake.com/users/12777860"
-            target="_blank"
-          >
-            <img
-              src="https://cdn.glitch.com/827943e9-7be2-41a1-b0d6-f0b8afae83b7%2Frsz_2new-handshake-logo.jpg?v=1615611939184"
-              alt="The Handshake icon"
-          /></a>
+        <a href="https://app.joinhandshake.com/users/12777860" target="_blank">
+          <img
+            src="https://cdn.glitch.com/827943e9-7be2-41a1-b0d6-f0b8afae83b7%2Frsz_2new-handshake-logo.jpg?v=1615611939184"
+            alt="The Handshake icon" /></a>
 
-          <a href="https://www.linkedin.com/in/joseph-stewart/" target="_blank">
-            <img
-              src="https://cdn.glitch.com/827943e9-7be2-41a1-b0d6-f0b8afae83b7%2Frsz_linkedin-high-qual.jpg?v=1616302695181"
-              alt="The LinkedIn icon"
-          /></a>
+        <a href="https://www.linkedin.com/in/joseph-stewart/" target="_blank">
+          <img
+            src="https://cdn.glitch.com/827943e9-7be2-41a1-b0d6-f0b8afae83b7%2Frsz_linkedin-high-qual.jpg?v=1616302695181"
+            alt="The LinkedIn icon" /></a>
 
-          <a
-            href="https://www.facebook.com/joseph.r.stewart.50"
-            target="_blank"
-          >
-            <img
-              src="https://cdn.glitch.com/9259f1dc-be5d-4cb2-a818-75d00481ef6a%2Ffacebook.png?1611606738694"
-              alt="The Facebook icon"
-          /></a>
+        <a href="https://www.facebook.com/joseph.r.stewart.50" target="_blank">
+          <img src="https://cdn.glitch.com/9259f1dc-be5d-4cb2-a818-75d00481ef6a%2Ffacebook.png?1611606738694"
+            alt="The Facebook icon" /></a>
 
-          <a
-            href="https://www.youtube.com/user/Joestructo/videos"
-            target="_blank"
-          >
-            <img
-              src="https://cdn.glitch.com/9259f1dc-be5d-4cb2-a818-75d00481ef6a%2Fyoutube.png?1611606735494"
-              alt="The YouTube icon"
-          /></a>
-        </div>
-      </footer>
-    </div>
-  </body>
+        <a href="https://www.youtube.com/user/Joestructo/videos" target="_blank">
+          <img src="https://cdn.glitch.com/9259f1dc-be5d-4cb2-a818-75d00481ef6a%2Fyoutube.png?1611606735494"
+            alt="The YouTube icon" /></a>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>
