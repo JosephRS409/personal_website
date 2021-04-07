@@ -136,16 +136,16 @@ The Slideshow CSS below
   
   For nth-of-child vs nth-of-type see:
   https://css-tricks.com/the-difference-between-nth-child-and-nth-of-type/
-*/
+  */
   object-fit: scale-down;
 }
 
 /* .row .column:nth-of-type(2) img {
   /*   The second .column of the .row class. */
-    /*   object-fit: none; 
-  }
-  TAKEN OUT 
-  WAITING ON IMPROVEMENTS */
+  /*   object-fit: none; 
+}
+TAKEN OUT 
+WAITING ON IMPROVEMENTS */
 
 /* Top half images */
 
@@ -272,16 +272,16 @@ iframe {
 }
 
 /* Option 1: Give all videos a margin where the video touches the edge of content.
- */
+*/
 
 /* Option 2: Give a class or id to the 2-projects.html main. Call it. Give main a height to my liking. Were I to add to this page, I would need to take it out.
 Also, turn on margin: 1em;
- */
+*/
 
 
 #talent-title {
   /*   ID is frequently used when using JavaScript.
-    This allows for ease of implementation.*/
+  This allows for ease of implementation.*/
   grid-column: 1/2;
   grid-row: 1/2;
   /*   margin: auto; */
@@ -323,16 +323,24 @@ Also, turn on margin: 1em;
 }
 
 /* At the top. */
-
 .storyHeadline {
   height: fit-content;
   grid-column: 1/3;
   grid-row: 1/2;
   text-align: center;
-  font-size: 3em;
+  /*font-size: 3.5vh;*/
+  /*min-height: 6vh;*/
+  font-size: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  padding: 25px;
+  margin: 0px;
+  /*color: white;*/
 }
 
-.easy {
+.titleSection {
   grid-column: 1/2;
   grid-row: 2/4;
   margin: 2em auto;
@@ -349,7 +357,7 @@ Also, turn on margin: 1em;
 }
 
 .introParagraph {  height: fit-content;
-
+  
   height: fit-content;
   grid-column: 1/2;
   grid-row: 3/4;
@@ -455,7 +463,7 @@ label {
 
 input, textarea {
   /* To make sure that all text fields have the same font settings
-     By default, textareas have a monospace font */
+  By default, textareas have a monospace font */
   font: 1em sans-serif;
   /* Uniform text field size */
   width: 300px;
@@ -484,7 +492,7 @@ textarea {
 
 button {
   /* This extra margin represent roughly the same space as the space
-     between the labels and their text fields */
+  between the labels and their text fields */
   margin-left: 0.5em;
 }
 
@@ -533,6 +541,14 @@ footer p {
   /*   text-decoration-color: black; */
   border-bottom: 5px solid yellow;
 }
+/** {
+  margin: 0;
+  padding: 0;
+  background-color: #419871;
+  box-sizing: border-box;
+  text-align: center;
+  height: 100%;
+}*/
 
 @media screen and (max-width: 950px) {
   /* beginning of media query */
